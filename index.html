@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__menu">
+        <ul class="header__menu-items">
+          <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#">Контрагентам</a></li>
+          <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#">Дизайнерам</a></li>
+          <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#">Вакансии</a></li>
+        </ul>
+
+        <div class="header__logo">
+          <a href="#"><img src="images/logo/OJJO.svg" alt="logo"></a>
+        </div>
+
+        <div class="burger-menu">
+          <a href="#" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+          </a>
+          
+
+          <nav class="burger-menu__nav">
+            <ul class="header__menu-items burger-menu-items">
+              <li class="header__menu-items-item burger-menu-items-item"><a class="header__menu-items-item-link"
+                  href="#">Контрагентам</a></li>
+              <li class="header__menu-items-item burger-menu-items-item"><a class="header__menu-items-item-link"
+                  href="#">Дизайнерам</a></li>
+              <li class="header__menu-items-item burger-menu-items-item"><a class="header__menu-items-item-link"
+                  href="#">Вакансии</a></li>
+              <li class="header__menu-items-item burger-menu-items-item"><a class="header__menu-items-item-link"
+                  href="#">Вход/Регистрация</a>
+              </li>
+              <div class="burger-menu__nav-box burger-menu-items-item">
+                <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#"><svg width="16"
+                      height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="svg-group"
+                        d="M8 0C9.06087 0 10.0783 0.421427 10.8284 1.17157C11.5786 1.92172 12 2.93913 12 4C12 5.06087 11.5786 6.07828 10.8284 6.82843C10.0783 7.57857 9.06087 8 8 8C6.93913 8 5.92172 7.57857 5.17157 6.82843C4.42143 6.07828 4 5.06087 4 4C4 2.93913 4.42143 1.92172 5.17157 1.17157C5.92172 0.421427 6.93913 0 8 0ZM8 10C12.42 10 16 11.79 16 14V16H0V14C0 11.79 3.58 10 8 10Z"
+                        fill="white" />
+                    </svg></a></li>
+                <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#"><svg width="17"
+                      height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="svg-group"
+                        d="M8.97342 2.59641C6.21857 -1.65888 0.642853 0.659263 0.642853 5.29469C0.642853 8.77555 8.28685 14.2205 8.97342 14.9285C9.66471 14.2205 16.9286 8.77555 16.9286 5.29469C16.9286 0.694406 11.7334 -1.65888 8.97342 2.59641Z"
+                        fill="white" />
+                    </svg></a></li>
+              </div>
+              <div class="burger-menu__nav-box burger-menu-items-item">
+                <li class="footer__inner-item burger__inner-item"><a class="footer__inner-item-link" href="#"><svg
+                      width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="social__links burger-social__links"
+                        d="M22.8956 2.52385C22.7662 2.04288 22.5127 1.60435 22.1605 1.25215C21.8083 0.899951 21.3697 0.646434 20.8888 0.516973C19.1175 0.0375978 12 0.0375977 12 0.0375977C12 0.0375977 4.8825 0.0375978 3.11125 0.516973C2.63029 0.646434 2.19176 0.899951 1.83956 1.25215C1.48736 1.60435 1.23384 2.04288 1.10438 2.52385C0.773648 4.33025 0.613153 6.1637 0.625005 8.0001C0.613153 9.83649 0.773648 11.6699 1.10438 13.4763C1.23384 13.9573 1.48736 14.3958 1.83956 14.748C2.19176 15.1002 2.63029 15.3538 3.11125 15.4832C4.8825 15.9626 12 15.9626 12 15.9626C12 15.9626 19.1175 15.9626 20.8888 15.4832C21.3697 15.3538 21.8083 15.1002 22.1605 14.748C22.5127 14.3958 22.7662 13.9573 22.8956 13.4763C23.2264 11.6699 23.3869 9.83649 23.375 8.0001C23.3869 6.1637 23.2264 4.33025 22.8956 2.52385ZM9.72501 11.4126V4.5876L15.6319 8.0001L9.72501 11.4126Z"
+                        fill="#333333" />
+                    </svg></a></li>
+                <li class="footer__inner-item burger__inner-item"><a class="footer__inner-item-link" href="#"><svg
+                      width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="social__links burger-social__links" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.3624 9.75765C21.3624 9.75765 23.3028 11.6741 23.7828 12.5609C23.7922 12.5736 23.7994 12.5878 23.8044 12.6029C24 12.9305 24.048 13.1873 23.952 13.3769C23.79 13.6901 23.2416 13.8473 23.0556 13.8605H19.626C19.3872 13.8605 18.8904 13.7981 18.2856 13.3805C17.8236 13.0577 17.364 12.5261 16.9188 12.0065C16.254 11.2349 15.6792 10.5653 15.0972 10.5653C15.0237 10.5651 14.9507 10.5773 14.8812 10.6013C14.4408 10.7405 13.8816 11.3681 13.8816 13.0397C13.8816 13.5629 13.4688 13.8605 13.1796 13.8605H11.6088C11.0736 13.8605 8.28722 13.6733 5.81642 11.0681C2.78882 7.87845 0.0696241 1.48005 0.0432241 1.42365C-0.125976 1.00965 0.229224 0.784049 0.613224 0.784049H4.07642C4.54082 0.784049 4.69202 1.06485 4.79762 1.31685C4.92002 1.60605 5.37362 2.76285 6.11762 4.06245C7.32242 6.17685 8.06282 7.03725 8.65442 7.03725C8.76557 7.03758 8.87484 7.0086 8.97122 6.95325C9.74402 6.52845 9.60002 3.76845 9.56402 3.19965C9.56402 3.08925 9.56282 1.96725 9.16682 1.42485C8.88362 1.03605 8.40122 0.884848 8.10962 0.829648C8.18762 0.716848 8.35322 0.544048 8.56562 0.442048C9.09482 0.178048 10.0512 0.139648 11.0004 0.139648H11.5272C12.5568 0.154048 12.8232 0.220048 13.1976 0.314848C13.9512 0.494848 13.9656 0.983249 13.8996 2.64645C13.8804 3.12165 13.86 3.65685 13.86 4.28685C13.86 4.42125 13.854 4.57125 13.854 4.72365C13.8312 5.57685 13.8012 6.53805 14.4036 6.93285C14.4818 6.98152 14.572 7.0073 14.664 7.00725C14.8728 7.00725 15.498 7.00725 17.1936 4.09725C17.9376 2.81205 18.5136 1.29645 18.5532 1.18245C18.5868 1.11885 18.6876 0.940048 18.81 0.868048C18.8971 0.821723 18.9946 0.798581 19.0932 0.800849H23.1672C23.6112 0.800849 23.9124 0.868049 23.9712 1.03605C24.0696 1.30845 23.952 2.14005 22.092 4.65525C21.7788 5.07405 21.504 5.43645 21.2628 5.75325C19.5768 7.96605 19.5768 8.07765 21.3624 9.75765Z"
+                        fill="#333333" />
+                    </svg></a></li>
+                <li class="footer__inner-item burger__inner-item"><a class="footer__inner-item-link" href="#"><svg
+                      width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="social__links burger-social__links"
+                        d="M4.70932 1.63C4.70932 1.41333 4.73132 1.28333 5.10265 1.28333H10.0793C10.946 1.28333 11.426 2.02333 11.7727 3.412L12.0527 4.52267H12.8993C13.0527 1.37067 13.186 0 13.186 0C13.186 0 11.0553 0.24 9.79265 0.24H3.42665L0.0173187 0.130667V1.044L1.16732 1.26133C1.97399 1.42133 2.16732 1.592 2.23399 2.332C2.23399 2.332 2.30732 4.512 2.30732 8.092C2.30732 11.682 2.24732 13.832 2.24732 13.832C2.24732 14.4807 1.98732 14.7207 1.18732 14.8807L0.0393187 15.1007V16L3.45932 15.89H9.15932C10.4493 15.89 13.4193 16 13.4193 16C13.4893 15.22 13.9193 11.68 13.9893 11.2907H13.1893L12.3333 13.2307C11.6633 14.7507 10.6827 14.8607 9.59332 14.8607H6.32265C5.23599 14.8607 4.71265 14.434 4.71265 13.494V8.53333C4.71265 8.53333 7.12599 8.53333 7.90598 8.59733C8.51398 8.64 8.88132 8.814 9.07932 9.66267L9.33932 10.7927H10.2793L10.2193 7.94067L10.3473 5.07067H9.41998L9.11998 6.33067C8.93132 7.16 8.79998 7.31067 7.95065 7.39733C6.83998 7.51067 4.74065 7.49067 4.74065 7.49067V1.63333H4.70732L4.70932 1.63Z"
+                        fill="#333333" />
+                    </svg></a></li>
+                <li class="footer__inner-item burger__inner-item"><a class="footer__inner-item-link" href="#"><svg
+                      width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="social__links burger-social__links"
+                        d="M18.665 0.717064L0.935003 7.55406C-0.274997 8.04006 -0.267997 8.71506 0.713003 9.01606L5.265 10.4361L15.797 3.79106C16.295 3.48806 16.75 3.65106 16.376 3.98306L7.843 11.6841H7.841L7.843 11.6851L7.529 16.3771C7.989 16.3771 8.192 16.1661 8.45 15.9171L10.661 13.7671L15.26 17.1641C16.108 17.6311 16.717 17.3911 16.928 16.3791L19.947 2.15106C20.256 0.912064 19.474 0.351064 18.665 0.717064Z"
+                        fill="#333333" />
+                    </svg>
+                  </a></li>
+                <li class="footer__inner-item burger__inner-item"><a class="footer__inner-item-link" href="#"><svg
+                      width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="social__links burger-social__links"
+                        d="M7.51341 19.7467V10.8677H10.5088L10.9541 7.39127H7.51341V5.17694C7.51341 4.17377 7.79291 3.48694 9.23266 3.48694H11.057V0.387523C10.1694 0.292396 9.27713 0.246465 8.38441 0.249939C5.73674 0.249939 3.91891 1.86627 3.91891 4.83352V7.38477H0.942993V10.8612H3.92541V19.7467H7.51341Z"
+                        fill="#333333" />
+                    </svg>
+                  </a></li>
+              </div>
+            </ul>
+          </nav>
+          <div class="burger-menu__overlay">
+
+          </div>
+        </div>
+        <ul class="header__menu-items">
+          <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#">Поиск</a></li>
+          <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#">Вход/Регистрация</a></li>
+          <li class="header__menu-items-item"><a class="header__menu-items-item-link" href="#">Вакансии</a></li>
+        </ul>
+      </div>
+      <div class="header__main">
+        <h1 class="header__main-title">
+          Долго, дорого, богато!
+        </h1>
+        <a href="#">
+          <button class="header__main-btn btn">
+            каталог изделий
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="header__line">
+
+    </div>
+
+    <div class="container">
+      <div class="header__partners">
+        <ul class="header__partners-items">
+          <li class="header__partners-items-item"><a class="header__partners-items-item-link" href="#"><img
+                src="images/menu/Rectangle 2.png" alt="img"></a></li>
+          <li class="header__partners-items-item item__line"><a class="header__partners-items-item-link" href="#"><img
+                src="images/menu/Rectangle 2.png" alt="img"></a></li>
+          <li class="header__partners-items-item item__line"><a class="header__partners-items-item-link" href="#"><img
+                src="images/menu/Rectangle 2.png" alt="img"></a></li>
+          <li class="header__partners-items-item item__line"><a class="header__partners-items-item-link" href="#"><img
+                src="images/menu/Rectangle 2.png" alt="img"></a></li>
+          <li class="header__partners-items-item item__line"><a class="header__partners-items-item-link" href="#"><img
+                src="images/menu/Rectangle 2.png" alt="img"></a></li>
+          <li class="header__partners-items-item item__line"><a class="header__partners-items-item-link" href="#"><img
+                src="images/menu/Rectangle 2.png" alt="img"></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="services">
+    <div class="container">
+      <div class="services__inner">
+        <div class="services__box">
+          <div class="services__box-title">К мероприятиям</div>
+          <div class="services__box-subtitle">Настоящая красота здесь!</div>
+        </div>
+        <div class="services__list">
+          <a href="#" class="services__list-box">
+            <div class="services__list-box-front">Свадьба</div>
+            <div class="services__list-box-back"></div>
+          </a>
+          <a href="#" class="services__list-box">
+            <div class="services__list-box-front">Мужу</div>
+            <div class="services__list-box-back"></div>
+          </a>
+          <a href="#" class="services__list-box">
+            <div class="services__list-box-front">Жене</div>
+            <div class="services__list-box-back"></div>
+          </a>
+          <a href="#" class="services__list-box">
+            <div class="services__list-box-front">Партнеру</div>
+            <div class="services__list-box-back"></div>
+          </a>
+          <a href="#" class="services__list-box">
+            <div class="services__list-box-front">Коллекции</div>
+            <div class="services__list-box-back"></div>
+          </a>
+          <a href="#" class="services__list-box">
+            <div class="services__list-box-front">Редкость</div>
+            <div class="services__list-box-back"></div>
+          </a>
+        </div>
+        <div class="services__content">
+          <div class="services__content-box" id="services__content-box-1">
+            <p class="service__content-box-text">Кольца</p>
+          </div>
+          <div class="services__content-box" id="services__content-box-2">
+            <p class="service__content-box-text">серьги</p>
+          </div>
+          <div class="services__content-box" id="services__content-box-3">
+            <p class="service__content-box-text">подвески</p>
+          </div>
+          <div class="services__content-box" id="services__content-box-4">
+            <p class="service__content-box-text">запонки</p>
+          </div>
+          <div class="services__content-box" id="services__content-box-5">
+            <p class="service__content-box-text">браслеты</p>
+          </div>
+          <div class="services__content-box" id="services__content-box-6">
+            <p class="service__content-box-text">часы</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <blockquote class="blockquote">
+    <div class="blockquote__inner">
+      <p class="blockquote__inner-subtitle">Не знаете, что выбрать?</p>
+      <p class="blockquote__inner-title">Посетите наши салоны в Москве</p>
+      <p class="blockquote__inner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae
+        pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id
+        dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus.
+        Pharetra lorem sem purus nisi libero viverra ipsum.</p>
+      <a class="blockquote__inner-btn" href="#">наши салоны</a>
+    </div>
+  </blockquote>
+
+  <section class="blog">
+    <div class="container">
+      <div class="blog__inner">
+        <p class="blog__inner-subtitle">Полезные статьи</p>
+        <h2 class="blog__inner-title">Лучшие советы по подбору дорогих подарков</h2>
+        <div class="blog__inner-items">
+          <div class="blog__inner-items-item" id="blog__inner-items-item-1">
+            <p class="blog__inner-items-item-text">
+              Как выбрать<br>
+              часы для своей<br>
+              будущей жены
+            </p>
+          </div>
+
+          <div class="blog__inner-items-item" id="blog__inner-items-item-2">
+            <p class="blog__inner-items-item-text">
+              Запонки для мужа:<br>
+              7 ключевых правил<br>
+              покупки аксессуара
+            </p>
+          </div>
+
+          <div class="blog__inner-items-item" id="blog__inner-items-item-3">
+            <p class="blog__inner-items-item-text">
+              Как выбрать<br>
+              обручальные кольца<br>
+              молодоженам
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blog__inner-box"><a class="blog__inner-box-button" href="#">читать наш блог</a></div>
+    </div>
+  </section>
+
+  <section class="social">
+    <div class="container">
+      <p class="social__title-link">
+        #ojjo_jewerly
+      </p>
+      <p class="social__title">
+        Мы в социальных сетях
+      </p>
+      <div class="social__items">
+        <div class="social__items-item social__item-back-1">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="social__item-link"><svg
+              width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="play"
+                d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM46.2578 35.5391L29.1953 47.9531C29.1018 48.0203 28.9915 48.0605 28.8766 48.0691C28.7618 48.0777 28.6468 48.0545 28.5442 48.0021C28.4417 47.9496 28.3556 47.8699 28.2954 47.7716C28.2352 47.6734 28.2033 47.5605 28.2031 47.4453V22.6328C28.2027 22.5174 28.2343 22.4041 28.2944 22.3056C28.3544 22.207 28.4406 22.127 28.5434 22.0744C28.6461 22.0218 28.7614 21.9987 28.8765 22.0076C28.9916 22.0166 29.1019 22.0572 29.1953 22.125L46.2578 34.5312C46.3384 34.5883 46.4042 34.6638 46.4496 34.7515C46.4949 34.8391 46.5186 34.9364 46.5186 35.0352C46.5186 35.1339 46.4949 35.2312 46.4496 35.3189C46.4042 35.4065 46.3384 35.4821 46.2578 35.5391Z"
+                fill="white" />
+            </svg></a>
+        </div>
+        <div class="social__items-item">
+          <img src="images/social__link/gallery__image.jpg" alt="img" class="social__item-img">
+        </div>
+        <div class="social__items-item ">
+          <img src="images/social__link/gallery__image_2.jpg" alt="img" class="social__item-img">
+        </div>
+        <div class="social__items-item">
+          <img src="images/social__link/gallery__image_3.jpg" alt="img" class="social__item-img">
+        </div>
+        <div class="social__items-item">
+          <img src="images/social__link/gallery__image_4.jpg" alt="img" class="social__item-img">
+        </div>
+        <div class="social__items-item social__item-back-2">
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="social__item-link"><svg
+              width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="play"
+                d="M35 0C15.6719 0 0 15.6719 0 35C0 54.3281 15.6719 70 35 70C54.3281 70 70 54.3281 70 35C70 15.6719 54.3281 0 35 0ZM46.2578 35.5391L29.1953 47.9531C29.1018 48.0203 28.9915 48.0605 28.8766 48.0691C28.7618 48.0777 28.6468 48.0545 28.5442 48.0021C28.4417 47.9496 28.3556 47.8699 28.2954 47.7716C28.2352 47.6734 28.2033 47.5605 28.2031 47.4453V22.6328C28.2027 22.5174 28.2343 22.4041 28.2944 22.3056C28.3544 22.207 28.4406 22.127 28.5434 22.0744C28.6461 22.0218 28.7614 21.9987 28.8765 22.0076C28.9916 22.0166 29.1019 22.0572 29.1953 22.125L46.2578 34.5312C46.3384 34.5883 46.4042 34.6638 46.4496 34.7515C46.4949 34.8391 46.5186 34.9364 46.5186 35.0352C46.5186 35.1339 46.4949 35.2312 46.4496 35.3189C46.4042 35.4065 46.3384 35.4821 46.2578 35.5391Z"
+                fill="white" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__inner-subtitle">Полезные советы и персональный предложения</div>
+        <div class="contacts__inner-title">Эксклюзивная рассылка</div>
+        <div class="contacts__inner-box">
+          <ul class="contacts__inner-box-items">
+            <li class="contacts__inner-box-items-item"><a class="contacts__inner-box-items-item-link" href="#">Личный
+                менеджер</a></li>
+            <li class="contacts__inner-box-items-item"><a class="contacts__inner-box-items-item-link" href="#">Доставка
+                и оформление</a></li>
+            <li class="contacts__inner-box-items-item"><a class="contacts__inner-box-items-item-link"
+                href="#">Индивидуальный дизайн</a></li>
+          </ul>
+          <div class="contacts__inner-box-container">
+            <form class="contacts__inner-box-container-form">
+              <input class="contacts__inner-box-container-form-input" type="email" placeholder="ваш e-mail">
+              <button class="contacts__inner-box-container-form-button">
+                отправить
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-nav">
+          <ul class="footer__inner-items">
+            <li class="footer__inner-item">
+              <h3 class="footer__inner-title">Полезные ссылки</h3>
+            </li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link" href="#">Доставка</a></li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link" href="#">Оплата</a></li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link" href="#">Акции</a></li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <ul class="footer__inner-items">
+            <li class="footer__inner-item">
+              <h3 class="footer__inner-title">оплата</h3>
+            </li>
+            <li class="footer__inner-item">
+              <p class="footer__inner-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper
+                justo,nec, pellentesque.</p>
+            </li>
+            <div class="footer__inner-box-cards">
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><img
+                    class="footer__inner-item-link-img footer__inner-item-link-img-1"
+                    src="images/foter__social_payment/Rectangle 13.png" alt="img"></a></li>
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><img
+                    class="footer__inner-item-link-img footer__inner-item-link-img-2"
+                    src="images/foter__social_payment/Rectangle 14.png" alt="img"></a></li>
+            </div>
+          </ul>
+          <ul class="footer__inner-items">
+            <li class="footer__inner-item">
+              <h3 class="footer__inner-title">контакты</h3>
+            </li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link footer__inner-item-link-phone" href="#">8
+                (812) 234-56-55</a></li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link footer__inner-item-link-phone" href="#">8
+                (812) 234-56-55</a></li>
+            <li class="footer__inner-item"><a class="footer__inner-item-link footer__inner-item-link-phone"
+                href="#">ojjo@ojjo.ru</a></li>
+          </ul>
+          <ul class="footer__inner-items">
+            <li class="footer__inner-item">
+              <h3 class="footer__inner-title">Социальные сети</h3>
+            </li>
+            <li class="footer__inner-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper
+              justo, nec, pellentesque.</a></li>
+            <div class="footer__link-box">
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><svg width="24" height="16"
+                    viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="social__links"
+                      d="M22.8956 2.52385C22.7662 2.04288 22.5127 1.60435 22.1605 1.25215C21.8083 0.899951 21.3697 0.646434 20.8888 0.516973C19.1175 0.0375978 12 0.0375977 12 0.0375977C12 0.0375977 4.8825 0.0375978 3.11125 0.516973C2.63029 0.646434 2.19176 0.899951 1.83956 1.25215C1.48736 1.60435 1.23384 2.04288 1.10438 2.52385C0.773648 4.33025 0.613153 6.1637 0.625005 8.0001C0.613153 9.83649 0.773648 11.6699 1.10438 13.4763C1.23384 13.9573 1.48736 14.3958 1.83956 14.748C2.19176 15.1002 2.63029 15.3538 3.11125 15.4832C4.8825 15.9626 12 15.9626 12 15.9626C12 15.9626 19.1175 15.9626 20.8888 15.4832C21.3697 15.3538 21.8083 15.1002 22.1605 14.748C22.5127 14.3958 22.7662 13.9573 22.8956 13.4763C23.2264 11.6699 23.3869 9.83649 23.375 8.0001C23.3869 6.1637 23.2264 4.33025 22.8956 2.52385ZM9.72501 11.4126V4.5876L15.6319 8.0001L9.72501 11.4126Z"
+                      fill="#333333" />
+                  </svg></a></li>
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><svg width="24" height="14"
+                    viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="social__links" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M21.3624 9.75765C21.3624 9.75765 23.3028 11.6741 23.7828 12.5609C23.7922 12.5736 23.7994 12.5878 23.8044 12.6029C24 12.9305 24.048 13.1873 23.952 13.3769C23.79 13.6901 23.2416 13.8473 23.0556 13.8605H19.626C19.3872 13.8605 18.8904 13.7981 18.2856 13.3805C17.8236 13.0577 17.364 12.5261 16.9188 12.0065C16.254 11.2349 15.6792 10.5653 15.0972 10.5653C15.0237 10.5651 14.9507 10.5773 14.8812 10.6013C14.4408 10.7405 13.8816 11.3681 13.8816 13.0397C13.8816 13.5629 13.4688 13.8605 13.1796 13.8605H11.6088C11.0736 13.8605 8.28722 13.6733 5.81642 11.0681C2.78882 7.87845 0.0696241 1.48005 0.0432241 1.42365C-0.125976 1.00965 0.229224 0.784049 0.613224 0.784049H4.07642C4.54082 0.784049 4.69202 1.06485 4.79762 1.31685C4.92002 1.60605 5.37362 2.76285 6.11762 4.06245C7.32242 6.17685 8.06282 7.03725 8.65442 7.03725C8.76557 7.03758 8.87484 7.0086 8.97122 6.95325C9.74402 6.52845 9.60002 3.76845 9.56402 3.19965C9.56402 3.08925 9.56282 1.96725 9.16682 1.42485C8.88362 1.03605 8.40122 0.884848 8.10962 0.829648C8.18762 0.716848 8.35322 0.544048 8.56562 0.442048C9.09482 0.178048 10.0512 0.139648 11.0004 0.139648H11.5272C12.5568 0.154048 12.8232 0.220048 13.1976 0.314848C13.9512 0.494848 13.9656 0.983249 13.8996 2.64645C13.8804 3.12165 13.86 3.65685 13.86 4.28685C13.86 4.42125 13.854 4.57125 13.854 4.72365C13.8312 5.57685 13.8012 6.53805 14.4036 6.93285C14.4818 6.98152 14.572 7.0073 14.664 7.00725C14.8728 7.00725 15.498 7.00725 17.1936 4.09725C17.9376 2.81205 18.5136 1.29645 18.5532 1.18245C18.5868 1.11885 18.6876 0.940048 18.81 0.868048C18.8971 0.821723 18.9946 0.798581 19.0932 0.800849H23.1672C23.6112 0.800849 23.9124 0.868049 23.9712 1.03605C24.0696 1.30845 23.952 2.14005 22.092 4.65525C21.7788 5.07405 21.504 5.43645 21.2628 5.75325C19.5768 7.96605 19.5768 8.07765 21.3624 9.75765Z"
+                      fill="#333333" />
+                  </svg></a></li>
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><svg width="14" height="16"
+                    viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="social__links"
+                      d="M4.70932 1.63C4.70932 1.41333 4.73132 1.28333 5.10265 1.28333H10.0793C10.946 1.28333 11.426 2.02333 11.7727 3.412L12.0527 4.52267H12.8993C13.0527 1.37067 13.186 0 13.186 0C13.186 0 11.0553 0.24 9.79265 0.24H3.42665L0.0173187 0.130667V1.044L1.16732 1.26133C1.97399 1.42133 2.16732 1.592 2.23399 2.332C2.23399 2.332 2.30732 4.512 2.30732 8.092C2.30732 11.682 2.24732 13.832 2.24732 13.832C2.24732 14.4807 1.98732 14.7207 1.18732 14.8807L0.0393187 15.1007V16L3.45932 15.89H9.15932C10.4493 15.89 13.4193 16 13.4193 16C13.4893 15.22 13.9193 11.68 13.9893 11.2907H13.1893L12.3333 13.2307C11.6633 14.7507 10.6827 14.8607 9.59332 14.8607H6.32265C5.23599 14.8607 4.71265 14.434 4.71265 13.494V8.53333C4.71265 8.53333 7.12599 8.53333 7.90598 8.59733C8.51398 8.64 8.88132 8.814 9.07932 9.66267L9.33932 10.7927H10.2793L10.2193 7.94067L10.3473 5.07067H9.41998L9.11998 6.33067C8.93132 7.16 8.79998 7.31067 7.95065 7.39733C6.83998 7.51067 4.74065 7.49067 4.74065 7.49067V1.63333H4.70732L4.70932 1.63Z"
+                      fill="#333333" />
+                  </svg></a></li>
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><svg width="21" height="18"
+                    viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="social__links"
+                      d="M18.665 0.717064L0.935003 7.55406C-0.274997 8.04006 -0.267997 8.71506 0.713003 9.01606L5.265 10.4361L15.797 3.79106C16.295 3.48806 16.75 3.65106 16.376 3.98306L7.843 11.6841H7.841L7.843 11.6851L7.529 16.3771C7.989 16.3771 8.192 16.1661 8.45 15.9171L10.661 13.7671L15.26 17.1641C16.108 17.6311 16.717 17.3911 16.928 16.3791L19.947 2.15106C20.256 0.912064 19.474 0.351064 18.665 0.717064Z"
+                      fill="#333333" />
+                  </svg>
+                </a></li>
+              <li class="footer__inner-item"><a class="footer__inner-item-link" href="#"><svg width="12" height="20"
+                    viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="social__links"
+                      d="M7.51341 19.7467V10.8677H10.5088L10.9541 7.39127H7.51341V5.17694C7.51341 4.17377 7.79291 3.48694 9.23266 3.48694H11.057V0.387523C10.1694 0.292396 9.27713 0.246465 8.38441 0.249939C5.73674 0.249939 3.91891 1.86627 3.91891 4.83352V7.38477H0.942993V10.8612H3.92541V19.7467H7.51341Z"
+                      fill="#333333" />
+                  </svg>
+                </a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer__inner-line">
+
+        </div>
+        <div class="footer__inner-underground">
+          <div class="footer__inner-underground-box">
+            <a class="footer__inner-underground-box-link" href="#">(c) 2020 OJJO jewelry</a>
+            <a class="footer__inner-underground-box-link" href="#">Договор публичной офферты</a>
+            <a class="footer__inner-underground-box-link" href="#">Контрагентам</a>
+            <a id="special" class="footer__inner-underground-box-link" href="#">Сделано Figma.info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
